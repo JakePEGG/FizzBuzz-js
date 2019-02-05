@@ -23,4 +23,10 @@ describe('fizzbuzz', function(){
       });
     });
 
+    describe('divisble by 6', function(){
+      it('checks to test whether its divisble by 6', function(){
+        expect(fizzbuzz.isDivisibleByfive(6)).toBe(false);
+      });
+    });
+
 });
