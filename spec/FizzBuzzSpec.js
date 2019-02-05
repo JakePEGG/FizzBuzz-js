@@ -29,4 +29,10 @@ describe('fizzbuzz', function(){
       });
     });
 
+    describe('divisble by both', function(){
+      it("check whether its divisble by both 3&5", function(){
+        expect(fizzbuzz.divisiblebyboth(15)).toBe(true);
+      });
+    });
+
 });

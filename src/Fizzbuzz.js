@@ -10,6 +10,9 @@ var FizzBuzz = function(){
   FizzBuzz.prototype._isDivisibleBy = function(number, divisor) {
     return (number % divisor === 0);
   };
+  FizzBuzz.prototype.divisiblebyboth = function(number) {
+    return (number % 5 === 0 && number % 3 === 0)
+  };
 };
 
 
