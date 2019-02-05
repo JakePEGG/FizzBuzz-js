@@ -5,7 +5,7 @@ describe('fizzbuzz',function(){
   });
 
     describe('divisble by 3', function(){
-      it('Checks to see if it generates fizz', function() {
+      it('Checks to see if its divisble by 3', function() {
         expect(fizzbuzz.divisiblebythree(3)).toBe(true);
       });
     });
