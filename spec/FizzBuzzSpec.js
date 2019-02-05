@@ -35,4 +35,10 @@ describe('fizzbuzz', function(){
       });
     });
 
+    describe('divisble by 16?', function() {
+      it("check to see whether to see if it understands fizzbuzz", function(){
+        expect(fizzbuzz.divisiblebyboth(16)).toBe(false);
+      });
+    });
+
 });
