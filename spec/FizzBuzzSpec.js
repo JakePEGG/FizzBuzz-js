@@ -17,4 +17,10 @@ describe('fizzbuzz', function(){
       });
     });
 
+    describe('divisible by 4', function(){
+      it('Checks to see if its divisble by 4', function() {
+        expect(fizzbuzz.isDivisibleBythree(4)).toBe(false);
+      });
+    });
+
 });
