@@ -1,4 +1,4 @@
-describe('fizzbuzz', function(){
+describe('FizzBuzz', function() {
 
   var fizzbuzz;
   beforeEach(function() {

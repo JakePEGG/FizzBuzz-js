@@ -1,4 +1,5 @@
-var FizzBuzz = function(){
+var FizzBuzz = function(){};
+console.log(FizzBuzz)
 
   FizzBuzz.prototype.isDivisibleBythree = function(number) {
     return this._isDivisibleBy(number, 3);
@@ -10,22 +11,25 @@ var FizzBuzz = function(){
   FizzBuzz.prototype._isDivisibleBy = function(number, divisor) {
     return (number % divisor === 0);
   };
+
   FizzBuzz.prototype.divisiblebyboth = function(number) {
     return (number % 5 === 0 && number % 3 === 0)
   };
-  // Fizzbuzz.prototype.check = function(number {
-  //   if (this.isDivisibleBythree(number)) {
-  //     return 'Fizz'
-  //   };
-  //   else if (this.isDivisibleByfive(number) {
-  //     return 'Buzz'
-  //   };
-  //   else if (this.divisiblebyboth(number) {
-  //     return 'Fizzbuzz'
-  //   };
-  //   else
-  //   return number
-  // };
+
+  FizzBuzz.prototype.play = function(number) {
+      if(this.divisibleByboth(number)) {
+          return 'FizzBuzz';
+      } else if (this._isDivisibleBythree(number)) {
+          return 'Fizz';
+      } else if (this._isDivisibleByfive(number)) {
+          return 'Buzz'
+      } else {
+          return number;
+      }
+
+      for (var i = 1; i <= 100; i++) {
+      console.log(fizzBuzz.play(i))
+  }
 };
 
 
